@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Mini Project</title>
+</head>
+
+<body>
+    <h1>University ChatBot</h1>
+    <form action="/submit" method="POST">
+    <input type="text" name="query" placeholder="Ask ChatBot">
+    <input type="submit" value="Search">
+  </form>
+   <% if(Array.isArray(response) && response.length>0){ %> 
+      <h2>Faculty Data</h2>
+      <ul>
+        <% response.forEach(faculty => {  %>
+          <li><strong><%= faculty.name %></strong> - <%= faculty.email %><br> 
+             <!-- <%# faculty.linkedin %><br> -->
+              <a href="<%= faculty.linkedin %>" target="_blank">LinkedIn</a><br>
+             <%= faculty.facebook %><br>
+             <%= faculty.X_acc %><br>
+             <%= faculty.instagram %><br>
+             <%= faculty.site %>
+            </li>
+          <% }) %>
+      </ul>
+    <% }else{ %>
+     <p>No faculty found</p> 
+    <% } %>
+ 
+</body>
+</html>
