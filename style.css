@@ -1,0 +1,101 @@
+body{
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Topbar */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+background:#002147;
+color:white;
+padding:8px 40px;
+font-size:14px;
+}
+
+.topbar a{
+color:white;
+text-decoration:none;
+margin-right:15px;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 40px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img{
+height:50px;
+}
+
+.menu a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.menu a:hover{
+color:#0073e6;
+}
+
+.help-button{
+background:#0073e6;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Hero Section */
+
+.hero{
+height:400px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1523240795612-9a054b0db644");
+background-size:cover;
+background-position:center;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero-btn{
+padding:10px 20px;
+background:#ffcc00;
+border:none;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* About */
+
+.about{
+padding:60px 100px;
+text-align:center;
+}
+
+/* Footer */
+
+footer{
+background:#002147;
+color:white;
+text-align:center;
+padding:20px;
+}
